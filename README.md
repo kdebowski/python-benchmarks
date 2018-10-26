@@ -1,3 +1,14 @@
+#### How to build image
+
+This is standard way of building docker image. Go to root directory and run in console:
+
+`docker build -t <image_name> .`
+
+`<image_name>` can be anything. For example:
+
+`docker build -t benchmarks .`
+
+
 #### How to test with wrk
 
 Download docker image with `wrk`:
