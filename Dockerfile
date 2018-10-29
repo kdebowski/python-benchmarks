@@ -1,11 +1,13 @@
 FROM python:3.7
 
-ENV directory frameworks
-ENV project aiohttp
+ARG directory
+ARG project
 
-COPY ./$directory/$project/. /app
-COPY requirements.txt /app
-WORKDIR ./app
+ENV env_directory=$directory
+ENV env_project=$project
+
+COPY /${env_directory}/${env_project}/. /app
+WORKDIR /app
 
 RUN pip install -r requirements.txt
 

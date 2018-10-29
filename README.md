@@ -1,13 +1,24 @@
 #### How to build image
 
-This is standard way of building docker image. Go to root directory and run in console:
+To build image you need to provide framework you want to test. There 2 expected values: directory and project names. Example of how to build docker image for testing Flask application:
 
-`docker build -t <image_name> .`
+`docker build -t fw:flask --build-arg directory=frameworks --build-arg project=flask .`
 
-`<image_name>` can be anything. For example:
+`docker build` - is standard command to build image
 
-`docker build -t benchmarks .`
+`-t fw:flask` - gives name fw:flask
 
+`--build-arg directory=frameworks` - specifies main directory
+  
+`--build-arg project=flask` - specifies subdirectory, which is project name. 
+
+#### How to run container
+
+If you have already built image, you can run your container. To do so use command below:
+
+`docker run -d -p 8080:8080 --name fw_flask fw:flask`
+
+It will start detached container with name fw_flask exposed port 8080.
 
 #### How to test with wrk
 
