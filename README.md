@@ -31,3 +31,9 @@ Run image with options:
 `docker run --rm williamyeh/wrk -c 100 -d 10 -t 4 http://192.168.99.100:8080/`
 
 It will run requests against URL: 192.168.99.100:8080
+
+### Various
+
+#### How to remove \<none\> images:
+
+``` docker rmi $(docker images -f "dangling=true" -q)```
