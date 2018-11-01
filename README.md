@@ -43,6 +43,14 @@ Provided values are results of tests conducted on my personal computer. You will
 - Drive type: SSD
 - Docker for Windows (with full Virtualbox image)
 
+#### Testing conditions
+
+All tests are executed using common settings:
+- web server (Gunicorn) is running with 4 workers
+- wrk uses 100 connections
+- wrk tests for 10 seconds
+- wrk uses 4 threads
+
 ### Various
 
 #### How to remove \<none\> images:
