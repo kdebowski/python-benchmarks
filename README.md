@@ -51,6 +51,18 @@ All tests are executed using common settings:
 - wrk tests for 10 seconds
 - wrk uses 4 threads
 
+#### Frameworks
+
+- [Aiohttp (3.4.4)](https://github.com/aio-libs/aiohttp)
+
+#### Results
+
+##### Test case 1 - Hello World
+
+| Framework | Requests/sec |
+| :---: | :---: |
+| aiohttp | 585 |  
+
 ### Various
 
 #### How to remove \<none\> images:
