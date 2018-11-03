@@ -4,14 +4,6 @@ To build image you need to provide framework you want to test. There 2 expected 
 
 `docker build -t fw:flask --build-arg directory=frameworks --build-arg project=flask .`
 
-`docker build` - is standard command to build image
-
-`-t fw:flask` - gives name fw:flask
-
-`--build-arg directory=frameworks` - specifies main directory
-  
-`--build-arg project=flask` - specifies subdirectory, which is project name. 
-
 #### How to run container?
 
 If you have already built image, you can run your container. To do so use command below:
@@ -54,6 +46,7 @@ All tests are executed using common settings:
 #### Frameworks
 
 - [Aiohttp (3.4.4)](https://github.com/aio-libs/aiohttp)
+- [Bottle (0.12.13)](https://github.com/bottlepy/bottle)
 
 #### Results
 
@@ -61,7 +54,8 @@ All tests are executed using common settings:
 
 | Framework | Requests/sec |
 | :---: | :---: |
-| aiohttp | 585 |  
+| Aiohttp | 585 |  
+| Bottle | 264 |
 
 ### Various
 
