@@ -45,8 +45,9 @@ All tests are executed using common settings:
 
 #### Frameworks
 
-- [Aiohttp (3.4.4)](https://github.com/aio-libs/aiohttp)
-- [Bottle (0.12.13)](https://github.com/bottlepy/bottle)
+- [Aiohttp (3.4.4)](https://docs.aiohttp.org/en/stable/)
+- [Bottle (0.12.13)](https://bottlepy.org/docs/dev/)
+- [Falcon (1.4.1)](https://falconframework.org/)
 
 #### Results
 
@@ -54,7 +55,8 @@ All tests are executed using common settings:
 
 | Framework | Requests/sec |
 | :---: | :---: |
-| Aiohttp | 585 |  
+| Aiohttp | 585 |
+| Falcon | 288 |  
 | Bottle | 264 |
 
 ### Various
