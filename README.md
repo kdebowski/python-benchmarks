@@ -49,6 +49,7 @@ All tests are executed using common settings:
 - [Bottle (0.12.13)](https://bottlepy.org/docs/dev/)
 - [Falcon (1.4.1)](https://falconframework.org/)
 - [Flask (1.0.2)](http://flask.pocoo.org/)
+- [Weppy (1.3)](http://weppy.org)
 
 #### Results
 
@@ -59,6 +60,7 @@ All tests are executed using common settings:
 | Aiohttp | 585 |
 | Falcon | 288 |  
 | Bottle | 264 |
+| Weppy | 254 |
 | Flask | 226 |
 
 ### Various
