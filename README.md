@@ -49,7 +49,7 @@ All tests are executed using common settings:
 - [Bottle (0.12.13)](https://bottlepy.org/docs/dev/)
 - [Falcon (1.4.1)](https://falconframework.org/)
 - [Flask (1.0.2)](http://flask.pocoo.org/)
-- [Sanic (0.8.3)](https://sanic.readthedocs.io/en/latest/)
+- [Sanic (0.8.3)](https://sanicframework.org/)
 - [Weppy (1.3)](http://weppy.org)
 
 #### Results
